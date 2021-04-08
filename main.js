@@ -6,7 +6,7 @@
 
 // Ref
 
-var hamb = $('.header-right a i');
+var hamb = $('.header-right > a');
 
 var subList = $('.hamburger-menu');
 
@@ -19,8 +19,10 @@ var end = $('.hamburger-menu a.close');
 hamb.click(function(){
     // alert('click funziona');
     // subList.show();
-    // subList.fadeIn();
-    subList.slideDown();
+    // subList.fadeIn(1000);
+    // subList.slideDown();
+
+    subList.addClass('active');
 
 });
 
@@ -28,7 +30,8 @@ end.click(function(){
     // alert('click funziona');
     // subList.hide();
     // subList.fadeOut();
-    subList.slideUp();
+    // subList.slideUp(1000);
+    subList.removeClass('active');
 
 
 
